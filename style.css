@@ -17,10 +17,10 @@ A:active {
 
 
 body {
-  margin: 0;
-  background-image: url(background.jpg);
+  margin: 0; 
+  background-image: url(background.png);
+  background-size:cover;
 }
-
 .container {
   max-width: 2500px;
   margin: 0 auto;
@@ -46,25 +46,26 @@ body {
 
 
 .h{
-  margin-right: 10px;
-  margin-left: 10px;
+  text-align: center;
   font-size: 30px;}
 .blocklist {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
 }
 
 .blocklist .block1 {
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 260px;
   border: 1px solid black;
   display: flex;
   flex-wrap: nowrap;
 }
 
-.blocklist .img {
-  width: 150px;
+.blocklist .photo {
+  width: 200px;
+  height: 260px;
 }
 
 @media screen and (max-width:720px) {
@@ -77,6 +78,13 @@ body {
     max-width: 700px;
   }
 }
+ 
+
+  .text {
+    text-align: left;
+    font-size: 11px;
+  }
+
 
 #navbar {
   background-color: #333;
@@ -102,15 +110,8 @@ body {
   background-color: #ddd;
   color: black;
 }
-.photo-container {
-  position: relative;
-}
-
-.photo {
-  width: 200px;
-  position: absolute;
-  left: 1250px;
-  border: 2px inset black;
+@media screen {
+  
 }
 
 .text {
@@ -118,6 +119,7 @@ body {
   margin-left: 20px;
   font-size: 20px;/* Ширина изображения плюс отступ */
 }
+
 #big-photo-container {
   position: fixed;
   max-width: 1000px;
